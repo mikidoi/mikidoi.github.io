@@ -1,0 +1,117 @@
+.layoutHeader { 
+  header {
+    text-align: center;
+    background-color: white;
+    height: 105px;
+    @include breakpoint(middle-point) {
+      height: 0;
+    }
+  }
+  &.scroll {
+    height: 60px;
+    @include breakpoint(middle-point) {
+      height: 0;
+    }
+  }
+}
+
+.layoutHeader--nav {
+  position: fixed;
+  margin: 15px 0;
+  top: 60px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid $font-color-main;
+  border-bottom: 1px solid $font-color-main;
+  background-color: white;
+  @include breakpoint(middle-point) {
+    display: none;
+  }
+  &.scroll {
+    top: 0;
+    opacity: .8;
+    z-index: 10;
+  }
+}
+
+.layoutHeader--menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  > li {
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    a {
+      font: 12px Arial, sans-serif;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 10px 25px;
+      font-weight: 600;
+    }
+  }
+  &.scroll {
+    background: url("../images/favicon/favicon-32.png") no-repeat left;
+  }
+}
+
+//layoutSection is like a container
+.layoutSection {
+  //@extend %clearfix;//Susy has already clearfix
+  //max-width: 1000px;//Susy has already max-width
+  @include container;//This is coming from Susy
+  margin: 0 auto;
+  padding: 100px 10px 50px;
+
+}
+
+.layoutHome {
+  background-color : $blue-light;
+}
+.layoutContact {
+  background-color: $yellow-light;
+}
+.layoutFooter {
+  background-color: $pink-light;
+  padding: 50px 0;
+}
+
+.contactFormContainer {
+  padding: 50px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contactFormContainer input {
+  background-color: transparent;
+  border: 3px solid #F5C23D;
+  border-radius: 5px;
+  color: $font-color-main;
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  width: 240px;
+}
+
+
+//Susy is a plugin to Compass that allows you 
+//to create customizable grid frameworks easily
+.susy-col-6 {
+  @include span(6);//This is coming from Susy
+}
+.susy-col-6-last {
+  @include span(6 last);//This is coming from Susy
+}
+.susy-col-2 {
+  @include span(2);//This is coming from Susy
+}
+.susy-col-3 {
+  @include span(2);//This is coming from Susy
+}
+.susy-col-2-last {
+  @include span(2 last);
+}
+.susy-col-9-last {
+  @include span(9 last);
+}

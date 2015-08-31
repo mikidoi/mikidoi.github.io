@@ -1,0 +1,70 @@
+.logoLoader {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  min-height: 480px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+}
+.loaderContainer {
+  position: relative;
+  padding-top: 20%;
+  animation: shrink 1s 4s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+@keyframes shrink {
+  to {
+    transform: scale(.6, .6) rotate(360deg);
+  }
+}
+.plants {
+  position: absolute;
+  opacity: 0;
+}
+
+.plants.plant1 {
+  transform-origin: 88px 100%;
+  animation: grow 1s 2.2s ease forwards;
+}
+.plants.plant2 {
+  transform-origin: 50% 100%;
+  animation: grow 1s 2.7s ease forwards;
+}
+.plants.plant3 {
+  transform-origin: 245px 100%;
+  animation: grow 1s 3.2s ease forwards;
+}
+@keyframes grow {
+  from {
+    transform: scale(0.1, 0.1);
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.logoLoader {
+  animation: animLoadedHeader 1s 4s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+@keyframes animLoadedHeader {
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+.layoutLogo {
+	position: absolute;
+    display: block;
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+

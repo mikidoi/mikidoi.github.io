@@ -1,0 +1,46 @@
+@import "compass";
+@import "mixins";
+@import "../bower_components/susy/sass/susy";
+
+//
+// Colors
+//
+$font-color-main: #48484A;
+$font-color-light: #666;
+$font-family-headline: Verdana, Verdana, Geneva, sans-serif;
+
+$yellow-light: #FCFCD3;//#FFF99F
+$yellow-lighter: #FCFADB;
+$blue-light: #A7FBFD;//#4EEAEF,#C5C6C7 gray #34D4D7 strong-lemongreen #DBFBFC light-blue
+$pink-light: #FCE8EC;
+//
+// Breakpoint
+//
+$mobile: 480px;
+$middle_bk_point: 600px;
+$bigger_bk_point: 800px;
+
+//
+// Changing Susy default global settings
+//
+$susy: (
+  //Tells Susy to use those
+  columns: 12,
+  container: 1000px,
+  global-box-sizing: border-box 
+  );
+@include border-box-sizing(true);
+//@include global-box-sizing(border-box);
+
+//
+// Clearfix(Susy has it already)
+//
+//%clearfix {
+//  &:after {
+//    content: "";
+//    display: table;
+//    clear: both;
+//  }
+//}
+
+

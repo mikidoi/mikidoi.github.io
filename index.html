@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Miki Doi - Front-end developer</title>
+  <link rel="stylesheet" href="cssmin/style.min.css"/>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--<script src="jsmin/scripts.min.js"></script>-->
+  <script src="jsmin/scripts.min.js" async></script>
+  
+  <!-- ****** faviconit.com favicons ****** -->
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <!-- ****** faviconit.com favicons ****** -->
+  <!-- initial-scall=1 will keep the same zoom for horizontal -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="home" class="layoutPage">
+        <div class="layoutHeader">
+          <header>
+            <div class="logoLoader">
+              <div class="loaderContainer">
+                <object data="images/plant1.svg" class="plants plant1" type="image/svg+xml">
+                </object>
+                <object data="images/plant2.svg" class="plants plant2" type="image/svg+xml">
+                </object>
+                <object data="images/plant3.svg" class="plants plant3" type="image/svg+xml">
+                </object>
+                <object data="images/text.svg" id="logoText" type="image/svg+xml">
+                </object>
+              </div>
+            </div>
+            <a href="#home" class="layoutLogo">
+              <canvas id="logoAnimation"></canvas>
+              <p class="logoText delay delay-2">Front-end developer</p>
+            </a>
+            <nav class="layoutHeader--nav">
+              <ul class="layoutHeader--menu">
+                  <li><a href="#home">Hem</a></li>
+                  <li><a href="#about">Om Miki</a></li>
+<!--                  <li><a href="#project">Projekt</a></li>-->
+              </ul>
+            </nav>
+          </header>
+        </div>
+
+        <div class="layoutMain">
+            <div class="layoutHome">
+                <section class="layoutSection">
+                    <p class="themeMain--intro">
+                        <span class="delay delay-1">Jag är</span><br>
+                        <span class="delay delay-2">Front-end utvecklare</span><br>
+                        <span class="delay delay-3">med passion</span><br>
+                        <span class="delay delay-4">för design</span>
+                    </p>
+                    <a href="#project" class="scrollDown-arrow delay delay-5"></a>
+                </section>
+            </div>
+            <div class="layoutAbout">
+                <section class="layoutSection">
+                    <h2 id="about" class="themeMain--intro">Om Miki</h2>
+                    <div class="susy-col-3">
+                      <img src="images/miki.png" alt="" class="clip-circle">
+                    </div>
+                    <div class="susy-col-9-last">
+                      <p>
+                        Hej! Jag heter Miki och arbetar som frontend utvecklare i Stockholm. 
+                        Medan jag arbetar, kände jag mig att jag behöver förbättra min kunskap
+                        i Javascript och därför jag har bestämt mig att plugga mer här.
+                        Jag tycker om design och att skapa häftiga effekter med hälp av CSS3.
+                      </p>
+                      <br>
+                      <p>
+                        Min hobby är att kolla recept på nätet och laga olika typ av maträtter. Jag kommer från 
+                        Japan och sälvklart vill jag gärna lära ut hur man kan göra sushi! 
+                        Jag tycker om att testa olika mat från hela världen.
+                        I helgen, bakade jag pirozhki. Det var väldigt gott.
+                      </p>
+                    </div>
+                </section>
+            </div>
+<!--
+            <div class="layoutProject">
+                <section class="layoutSection">
+                    <h2 id="project" class="themeMain--intro">Projekt</h2>
+                    <div class="projectBoxContainer">
+                      <div class="susy-col-2">
+                        <div class="project project1"></div>
+                      </div>
+                      <div class="susy-col-2">
+                        <div class="project project2"></div>
+                      </div>
+                      <div class="susy-col-2">
+                        <div class="project project-soon"></div>
+                      </div>
+                      <div class="susy-col-2">
+                        <div class="project project-soon"></div>
+                      </div>
+                      <div class="susy-col-2">
+                        <div class="project project-soon"></div>
+                      </div>
+                      <div class="susy-col-2-last">
+                        <div class="project project-soon"></div>
+                      </div>
+                </section>
+            </div>
+-->
+        </div>
+        <div class="layoutFooter">
+          <section class="layoutSection">
+            <div class="susy-col-6">
+
+            </div>
+            <div class="susy-col-6-last">
+             &#169; 2015 All rights reserved
+              <p>Miki Doi frontend utvecklare</p>
+            </div> 
+          </section>
+        </div>
+    </div>
+</body>
+</html>
