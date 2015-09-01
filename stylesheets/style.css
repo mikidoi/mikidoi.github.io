@@ -169,6 +169,12 @@ html {
   width: 240px;
 }
 
+.text-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .susy-col-6 {
   width: 49.15254%;
   float: left;
@@ -199,10 +205,10 @@ html {
   margin-right: 0;
 }
 
-.susy-col-9-last {
-  width: 74.57627%;
-  float: right;
-  margin-right: 0;
+.susy-col-8 {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
 }
 
 .logoLoader {
@@ -303,6 +309,11 @@ a:hover {
 .clip-circle {
   -webkit-clip-path: circle(50px at 120px 90px);
   clip-path: circle(50px at 120px 90px);
+}
+
+.profile-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .scrollDown-arrow {
