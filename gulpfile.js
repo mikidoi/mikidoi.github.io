@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 gulp.task('js', function () {
     gulp.src([
             'js/windowsPh.js',
-            'js/logo.js',
+//            'js/logo.js',
             'js/general.js',
             'js/date.js',
             'js/slider.js'
